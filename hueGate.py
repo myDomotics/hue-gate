@@ -48,7 +48,7 @@ examples :
 |hue/set/lights/Droite                         |{"on":true}                                                         |
 |hue/set/lights/Droite                         |{"on":true,"colorName":"blue"}                                      |
 |hue/set/lights/Droite                         |{"alert":"select"}                                                  |
-mosquitto_pub -h 192.168.0.26 -p 1883 -t 'hue/set/lights/Droite' -m '{"colorName":"blue","on":true}'
+mosquitto_pub -h <ip> -p <port> -t 'hue/set/lights/Droite' -m '{"colorName":"blue","on":true}'
 
 """
 import os, sys,platform,re,json,time
